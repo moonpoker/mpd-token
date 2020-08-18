@@ -1,0 +1,22 @@
+{
+  "name": "mpd-token",
+  "version": "0.0.1",
+  "description": "Moon Poker DAO Token",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonpoker/mpd-token.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moonpoker/mpd-token/issues"
+  },
+  "homepage": "https://github.com/moonpoker/mpd-token#readme"
+}
