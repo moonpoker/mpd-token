@@ -9,7 +9,7 @@ let mainnetGasPrice = 10;
 try {
   const res = request('GET', ethgasstation);
   // Unit is 10*gwei
-  mainnetGasPrice = (JSON.parse(res.getBody('utf8')).safeLow / 10).toString();
+  mainnetGasPrice = (JSON.parse(res.getBody('utf8')).average / 10).toString();
   console.log("Gas price: " + mainnetGasPrice);
 } catch {
   console.log("Unable to fetch gas prices.");
@@ -37,6 +37,14 @@ module.exports = {
   // Set default mocha options here, use special reporters etc.
   mocha: {
     // timeout: 100000
+  },
+
+  plugins: [
+    'truffle-plugin-verify'
+  ],
+  
+  api_keys: {
+    etherscan: 'ADTFHADWBNDKXEUD4I3U9ZVPQYTYG9VAJA'
   },
 
   // Configure your compilers

@@ -4,10 +4,10 @@ pragma solidity >= 0.5.0 < 0.7.0;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract MPDToken is ERC20 {
-  address manager = 0x2Abdb157b2603e17d531d4fc51a4fc6174c3dAEA;
+  address manager = 0xF5D2e347a2D51f77FdC824Db534a709cdBe5F7cD;
   uint256 initialSupply = 150000000 * (10**18);
 
-  constructor() ERC20("Moon Poker DAO", "GLD") public {
+  constructor() ERC20("Moon Poker DAO", "MPD") public {
     _mint(manager, initialSupply);
   }
 
