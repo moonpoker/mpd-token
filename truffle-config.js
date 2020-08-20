@@ -44,7 +44,7 @@ module.exports = {
   ],
   
   api_keys: {
-    etherscan: 'ADTFHADWBNDKXEUD4I3U9ZVPQYTYG9VAJA'
+    etherscan: process.env.ETHERSCAN_API
   },
 
   // Configure your compilers
